@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title> Formulario </title>
+    </head>
+    <body>
+
+        <div>
+            <h1>Formulário de cadastro</h1>
+            <form action="contact.html" method="POST">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                        <p>Código: <input type="number" pattern="\d*" maxlength="4"> </p>
+                        <p>Nome: <input type="text"/> </p>
+                        <p>Senha: <input type="password"/> </p>
+                        <p>Sexo:
+                            <input type="radio" name="sexo" value="f"  /> Feminino
+                            <input type="radio" name="sexo" value="m" /> Masculino
+                        </p>
+                        <p>Cartão de Crédito:</p>
+                        <p>
+                            <select multiple name="cartao">
+                                <option value="ma"> Mastercard </option>
+                                <option value="vi"> Visa </option>
+                                <option value="ae"> American Express </option>
+                            </select>
+                        </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Dados profissionais</legend>
+                        <p>Cargo:
+                            <select name="cargo">
+                                <option value="aj"> Analista Júnior </option>
+                                <option value="ap"> Analista Pleno </option>
+                                <option value="as"> Analista Sênior </option>
+                            </select>
+                        </p>
+                        <p>Dados Pessoais <br>
+                            <input type="checkbox" name="dados" value="fum" /> Fumante <br>
+                            <input type="checkbox" name="dados" value="pef" /> Pratica exercícios físicos <br>
+                            <input type="checkbox" name="dados" value="cba" /> Consome bebida alcoólica <br>
+                        </p>
+                        <p>Experiências profissionais</p>
+                        <textarea name="experiencias" cols="40" rows="5" placeholder="Data Início/Data Fim/Empresa/Cargo"></textarea>
+            
+                </fieldset>
+            <input type ="reset" value="Limpar" /> 
+            <input type="submit" value="Enviar"/>
+            
+            </form>
+        </div>
+    </body>
+</html>
